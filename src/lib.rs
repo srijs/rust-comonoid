@@ -18,7 +18,6 @@ pub trait Comonoid {
 impl<T> Comonoid for T where T: Clone {
     fn counit(self) -> () {}
     fn comult(self) -> (Self, Self) {
-        let c = self.clone();
-        (self, c)
+        (self.clone(), self)
     }
 }
