@@ -58,15 +58,27 @@
 <span id="16">16</span>
 <span id="17">17</span>
 <span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
 </pre><pre class='rust '>
 <span class='doccomment'>/// A comonoid in a monoidal category is a monoid</span>
-<span class='doccomment'>/// in the dual category.</span>
+<span class='doccomment'>/// in the dual category, what is the problem?</span>
 <span class='doccomment'>///</span>
 <span class='doccomment'>/// It is useful within Rust&#39;s ownership type system,</span>
 <span class='doccomment'>/// representing an object that can be both cloned</span>
 <span class='doccomment'>/// and destroyed.</span>
 <span class='kw'>pub</span> <span class='kw'>trait</span> <span class='ident'>Comonoid</span> {
+    <span class='doccomment'>/// The dual to the monoidal unit.</span>
+    <span class='doccomment'>/// It takes ownership of a value and returns `()`,</span>
+    <span class='doccomment'>/// rendering it unusable.</span>
     <span class='kw'>fn</span> <span class='ident'>counit</span>(<span class='self'>self</span>) <span class='op'>-&gt;</span> ();
+    <span class='doccomment'>/// The dual to the monoidal multiplication.</span>
+    <span class='doccomment'>/// It takes ownership of a value and returns a tuple of</span>
+    <span class='doccomment'>/// values, effectively performing a clone operation.</span>
     <span class='kw'>fn</span> <span class='ident'>comult</span>(<span class='self'>self</span>) <span class='op'>-&gt;</span> (<span class='kw'>Self</span>, <span class='kw'>Self</span>);
 }
 

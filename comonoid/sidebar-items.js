@@ -1,1 +1,1 @@
-initSidebarItems({"trait":[["Comonoid","A comonoid in a monoidal category is a monoid in the dual category."]]});
+initSidebarItems({"trait":[["Comonoid","A comonoid in a monoidal category is a monoid in the dual category, what is the problem?"]]});
