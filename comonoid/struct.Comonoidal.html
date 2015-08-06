@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Comonoidal` struct in crate `comonoid`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Comonoidal">
+
+    <title>comonoid::Comonoidal - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='index.html'>comonoid</a></p><script>window.sidebarCurrent = {name: 'Comonoidal', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press 'S' to search, '?' for more options..."
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='index.html'>comonoid</a>::<wbr><a class='struct' href=''>Comonoidal</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="#" title="collapse all docs">[&minus;]</a>
+        </span><a id='src-44' class='srclink' href='../src/comonoid/lib.rs.html#37' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Comonoidal&lt;T&gt;(_);</pre><div class='docblock'><p>A newtype wrapper to make a comonoid out of any
+cloneable type.</p>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;T&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;T&gt; for <a class='struct' href='../comonoid/struct.Comonoidal.html' title='comonoid::Comonoidal'>Comonoidal</a>&lt;T&gt;</code></h3><div class='impl-items'><h4 id='method.from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(a: T) -&gt; <a class='struct' href='../comonoid/struct.Comonoidal.html' title='comonoid::Comonoidal'>Comonoidal</a>&lt;T&gt;</code></h4>
+</div><h3 class='impl'><code>impl&lt;T&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html' title='core::convert::AsRef'>AsRef</a>&lt;T&gt; for <a class='struct' href='../comonoid/struct.Comonoidal.html' title='comonoid::Comonoidal'>Comonoidal</a>&lt;T&gt;</code></h3><div class='impl-items'><h4 id='method.as_ref' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/convert/trait.AsRef.html#method.as_ref' class='fnname'>as_ref</a>(&amp;self) -&gt; &amp;T</code></h4>
+</div><h3 class='impl'><code>impl&lt;T&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/convert/trait.AsMut.html' title='core::convert::AsMut'>AsMut</a>&lt;T&gt; for <a class='struct' href='../comonoid/struct.Comonoidal.html' title='comonoid::Comonoidal'>Comonoidal</a>&lt;T&gt;</code></h3><div class='impl-items'><h4 id='method.as_mut' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/convert/trait.AsMut.html#method.as_mut' class='fnname'>as_mut</a>(&amp;mut self) -&gt; &amp;mut T</code></h4>
+</div><h3 class='impl'><code>impl&lt;T&gt; <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a> for <a class='struct' href='../comonoid/struct.Comonoidal.html' title='comonoid::Comonoidal'>Comonoidal</a>&lt;T&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a></span></code></h3><div class='impl-items'><h4 id='method.clone' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone' class='fnname'>clone</a>(&amp;self) -&gt; Self</code></h4>
+<h4 id='method.clone_from' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html#method.clone_from' class='fnname'>clone_from</a>(&amp;mut self, source: &amp;Self)</code></h4>
+</div><h3 class='impl'><code>impl&lt;T&gt; <a class='trait' href='../comonoid/trait.Comonoid.html' title='comonoid::Comonoid'>Comonoid</a> for <a class='struct' href='../comonoid/struct.Comonoidal.html' title='comonoid::Comonoidal'>Comonoidal</a>&lt;T&gt; <span class='where'>where T: <a class='trait' href='http://doc.rust-lang.org/nightly/core/clone/trait.Clone.html' title='core::clone::Clone'>Clone</a></span></code></h3><div class='impl-items'><h4 id='method.counit' class='method'><code>fn <a href='../comonoid/trait.Comonoid.html#method.counit' class='fnname'>counit</a>(self)</code></h4>
+<h4 id='method.comult' class='method'><code>fn <a href='../comonoid/trait.Comonoid.html#method.comult' class='fnname'>comult</a>(self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>(Self, Self)</a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div class="shortcuts">
+            <h1>Keyboard shortcuts</h1>
+            <dl>
+                <dt>?</dt>
+                <dd>Show this help dialog</dd>
+                <dt>S</dt>
+                <dd>Focus the search field</dd>
+                <dt>&larrb;</dt>
+                <dd>Move up in search results</dd>
+                <dt>&rarrb;</dt>
+                <dd>Move down in search results</dd>
+                <dt>&#9166;</dt>
+                <dd>Go to active search result</dd>
+            </dl>
+        </div>
+        <div class="infos">
+            <h1>Search tricks</h1>
+            <p>
+                Prefix searches with a type followed by a colon (e.g.
+                <code>fn:</code>) to restrict the search to a given type.
+            </p>
+            <p>
+                Accepted types are: <code>fn</code>, <code>mod</code>,
+                <code>struct</code>, <code>enum</code>,
+                <code>trait</code>, <code>typedef</code> (or
+                <code>tdef</code>).
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../";
+        window.currentCrate = "comonoid";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../jquery.js"></script>
+    <script src="../main.js"></script>
+    
+    <script async src="../search-index.js"></script>
+</body>
+</html>

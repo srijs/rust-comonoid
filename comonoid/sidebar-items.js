@@ -1,1 +1,1 @@
-initSidebarItems({"trait":[["Comonoid","A comonoid in a monoidal category is a monoid in the dual category, what is the problem?"]]});
+initSidebarItems({"fn":[["discard","Takes ownership of a value and returns `()`, rendering it unusable."],["duplicate","Takes ownership of a value and returns a tuple of clones."]],"struct":[["Comonoidal","A newtype wrapper to make a comonoid out of any cloneable type."]],"trait":[["Comonoid","A comonoid in a monoidal category is a monoid in the dual category, what is the problem?"]]});

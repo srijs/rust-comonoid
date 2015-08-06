@@ -43,8 +43,19 @@
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>comonoid</a></span><span class='out-of-band'><span id='render-detail'>
             <a id="toggle-all-docs" href="#" title="collapse all docs">[&minus;]</a>
-        </span><a id='src-0' class='srclink' href='../src/comonoid/lib.rs.html#1-24' title='goto source code'>[src]</a></span></h1>
-<h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
+        </span><a id='src-0' class='srclink' href='../src/comonoid/lib.rs.html#1-75' title='goto source code'>[src]</a></span></h1>
+<h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.Comonoidal.html'
+                               title='comonoid::Comonoidal'>Comonoidal</a></td>
+                        <td class='docblock short'>
+                             <p>A newtype wrapper to make a comonoid out of any
+cloneable type.</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='traits' class='section-header'><a href="#traits">Traits</a></h2>
 <table>
                     <tr class=' module-item'>
                         <td><a class='trait' href='trait.Comonoid.html'
@@ -52,6 +63,27 @@
                         <td class='docblock short'>
                              <p>A comonoid in a monoidal category is a monoid
 in the dual category, what is the problem?</p>
+
+                        </td>
+                    </tr>
+                </table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.discard.html'
+                               title='comonoid::discard'>discard</a></td>
+                        <td class='docblock short'>
+                             <p>Takes ownership of a value and returns <code>()</code>,
+rendering it unusable.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='fn' href='fn.duplicate.html'
+                               title='comonoid::duplicate'>duplicate</a></td>
+                        <td class='docblock short'>
+                             <p>Takes ownership of a value and returns a tuple of
+clones.</p>
 
                         </td>
                     </tr>
