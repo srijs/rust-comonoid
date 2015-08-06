@@ -1,6 +1,6 @@
 [package]
 name = "comonoid"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Sam Rijs <srijs@airpost.net>"]
 description = "A comonoid in a monoidal category is a monoid in the dual category, what is the problem?"
 documentation = "http://srijs.github.io/rust-comonoid/comonoid"
