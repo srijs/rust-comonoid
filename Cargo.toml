@@ -1,7 +1,0 @@
-[package]
-name = "comonoid"
-version = "0.1.0"
-authors = ["Sam Rijs <srijs@airpost.net>"]
-description = "Comonoid trait"
-repository = "https://github.com/srijs/rust-comonoid"
-license = "MIT"
