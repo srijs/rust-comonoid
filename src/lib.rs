@@ -21,3 +21,15 @@ impl<T> Comonoid for T where T: Clone {
         (self.clone(), self)
     }
 }
+
+#[test]
+fn test_counit() {
+    let x = "hello";
+    assert_eq!(Comonoid::counit(x), ());
+}
+
+#[test]
+fn test_comult() {
+    let y = "world";
+    assert_eq!(Comonoid::comult(y), (y.clone(), y.clone()));
+}
