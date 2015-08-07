@@ -62,14 +62,14 @@ impl<T> Comonoid for Comonoidal<T> where T: Clone {
 
 #[test]
 fn test_counit() {
-    let x = from(42);
-    assert_eq!(Comonoid::counit(x), ());
+    let x = Comonoidal(42);
+    assert_eq!(x.counit(), ());
 }
 
 #[test]
 fn test_comult() {
-    let x = from(42);
-    let (y, z) = Comonoid::comult(x);
+    let x = Comonoidal(42);
+    let (y, z) = x.comult();
     assert_eq!(y.0, 42);
     assert_eq!(z.0, 42);
 }
