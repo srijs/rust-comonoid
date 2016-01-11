@@ -1,8 +1,8 @@
 [package]
 name = "comonoid"
-version = "0.2.0"
+version = "0.2.1"
 authors = ["Sam Rijs <srijs@airpost.net>"]
 description = "A comonoid in a monoidal category is a monoid in the dual category, what is the problem?"
 documentation = "http://srijs.github.io/rust-comonoid/comonoid"
 repository = "https://github.com/srijs/rust-comonoid"
-license = "MIT"
+license = "MIT OR Apache-2.0"
