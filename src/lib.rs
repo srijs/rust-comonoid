@@ -16,7 +16,7 @@
 /// implementation of [`Drop`](http://doc.rust-lang.org/std/ops/trait.Drop.html)
 /// and [`Clone`](http://doc.rust-lang.org/std/clone/trait.Clone.html),
 /// respectively.
-pub trait Comonoid {
+pub trait Comonoid: Sized {
     /// The dual to the monoidal unit.
     fn counit(self) -> ();
     /// The dual to the monoidal multiplication.
